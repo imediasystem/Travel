@@ -1,0 +1,132 @@
+body {
+    background-color: #FFF;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container	{
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.banner {
+    background: url("img/israel-5401543_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner > h1 {
+    color: #f3f3f3;
+    font-size: clamp(2rem, 6vw, 6rem);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    margin: 1.7rem auto;
+}
+
+.banner > h2 {
+    color: #f3f3f3;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    margin: 1.7rem auto;
+}
+
+.banner > p {
+    color: #f3f3f3;
+    font-size: clamp(0.3rem, 3vw, 1.2rem);
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: clamp(1rem, 3vw, 3rem);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.banner > a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: brown;
+    color: #f3f3f3;
+    padding: 1rem 2rem;
+    text-align: center;
+    border: 2px solid #f3f3f3;
+    border-radius: 10px;
+    display: block;
+    width: max-content;
+    margin: 4vh auto;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro > h1 {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    margin: 0 auto;
+    padding: clamp(0.5rem, 2vw, 3rem);
+    text-shadow: 0.1em 0.1em 0.1em grey;
+}
+
+.intro .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro .container > div {
+    max-width: 400px;
+    max-height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1vh 1vw;
+    box-shadow: 10px 10px 8px grey;
+    overflow: hidden;
+}
+
+.intro .container > div p {
+    padding: 1rem;
+    margin: 0;
+}
+
+.intro .container > div > div {
+    position: relative;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.intro .container > div > div > h2 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    color: #f3f3f3;
+}
+
+.intro .container > div > div > img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .intro .container {
+        flex-direction: column;
+    }
+        
+}
