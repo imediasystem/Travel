@@ -1,7 +1,9 @@
 body {
     background-color: #FFF;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.5s;
 }
 
 .container	{
@@ -9,6 +11,48 @@ body {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+/* ---- Menu nawigacja ---- */
+
+.menu {
+    background: rgba(0,0,0,0.7);
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu_items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    }
+
+  .menu_link {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f3f3f3;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    transition: transition;
+  }
+
+  .menu_link:hover {
+    color: #5a58a0;
+    transition: transition;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+/* ---- Banner ---- */
 
 .banner {
     background: url("img/israel-5401543_1920.jpg");
@@ -64,50 +108,59 @@ body {
     margin: 4vh auto;
 }
 
-.intro {
+/* ---- Ostatnie wyprawy ---- */
+
+.expeditions {
+    background: url("img/iran-3854255_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
     height: 100vh;
 }
 
-.intro > h1 {
+.expeditions > h1 {
     font-size: clamp(1.5rem, 4vw, 4rem);
     font-weight: bold;
-    color: rgb(54, 54, 54);
+    color: #242424;
     text-align: center;
     margin: 0 auto;
     padding: clamp(0.5rem, 2vw, 3rem);
+    padding-top: 4rem;
     text-shadow: 0.1em 0.1em 0.1em grey;
 }
 
-.intro .container {
+.expeditions .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0;
 }
 
-.intro .container > div {
-    max-width: 400px;
-    max-height: 600px;
-    border: 1px solid black;
+.expeditions .container > div {
+    width: 25%;
+    height: auto;
+    border: 2px solid black;
     border-radius: 10px;
     margin: 1vh 1vw;
     box-shadow: 10px 10px 8px grey;
     overflow: hidden;
 }
 
-.intro .container > div p {
+.expeditions .container > div p {
     padding: 1rem;
     margin: 0;
+    text-align: center;
+    font-weight: bold;
 }
 
-.intro .container > div > div {
+.expeditions .container > div > div {
     position: relative;
     max-height: 350px;
     overflow: hidden;
 }
 
-.intro .container > div > div > h2 {
+.expeditions .container > div > div > h2 {
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,0.6);
@@ -118,15 +171,121 @@ body {
     color: #f3f3f3;
 }
 
-.intro .container > div > div > img {
+.expeditions .container > div > div > img {
     width: 100%;
     height: auto;
     padding: 0;
 }
 
 @media only screen and (max-width: 800px) {
-    .intro .container {
+    .expeditions .container {
         flex-direction: column;
+    }
+
+    .expeditions .container > div {
+        width: 90%;
+    }
+
+    .menu_items {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.4rem;
+    }
+
+    .menu-icon {
+        display: flex;
+        max-width: fit-content;
+        color: #f3f3f3;
+        font-size: 1.5rem;
+        text-align: left;
+        border: 1px solid #f3f3f3;
+        border-radius: 5px;
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+        transition: all 0,5s linear;
+    }
+
+    .collapsible_content {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all 0,5s linear;
+    }
+
+    .collapsible--expanded .collapsible_content {
+        max-height: 100vh;
+    }
+
+    .collapsible--expanded .menu_icon {
+        box-shadow: 0 0 3px 2px #f3f3f3;
+        border-radius: 5px;
     }
         
 }
+
+/* ---- Nowe inspiracje ---- */
+
+.inspirations {
+    background: url("img/desert-4940295_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+    height: 100vh;
+}
+
+.inspirations > h1 {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    color: #242424;
+    text-align: center;
+    margin: 0 auto;
+    padding: clamp(0.5rem, 2vw, 3rem);
+    padding-top: 4rem;
+    text-shadow: 0.1em 0.1em 0.1em grey;
+}
+
+
+/* ---- Galeria ---- */
+
+.gallery {
+    background: url("img/desert-4954346_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    height: 100vh;
+}
+
+.gallery > h1 {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    color: #242424;
+    text-align: center;
+    margin: 0 auto;
+    padding: clamp(0.5rem, 2vw, 3rem);
+    padding-top: 4rem;
+    text-shadow: 0.1em 0.1em 0.1em grey;
+}
+
+/* ---- Kontakt ---- */
+
+.contact {
+    background: url("img/sunset-4913207_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+    height: 100vh;
+}
+
+.contact > h1 {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    color: #f3f3f3;
+    text-align: center;
+    margin: 0 auto;
+    padding: clamp(0.5rem, 2vw, 3rem);
+    padding-top: 4rem;
+    text-shadow: 0.1em 0.1em 0.1em grey;
+}
+
+
+/* ---- Stopka ---- */
