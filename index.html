@@ -27,17 +27,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
             
-    <!-- Navigacja strony -->
+    <!-- Navigation Menu -->
 
             <header class="menu" id="menu">
                 <div class="container collapsible collapsible--expanded">
                 <i class="menu-icon fa-solid fa-bars"></i>
-                  <ul class="menu_items collapsible_content">
-                    <li><a class="menu_link" href="#banner">O nas</a></li>
-                    <li><a class="menu_link" href="#expeditions">Wyprawy</a></li>
-                    <li><a class="menu_link" href="#inspirations">Inspiracje</a></li>
-                    <li><a class="menu_link" href="#gallery">Galeria</a></li>
-                    <li><a class="menu_link" href="#contact">Kontakt</a></li>
+                  <ul class="menu-items collapsible-content">
+                    <li><a class="menu-link" href="#banner">O nas</a></li>
+                    <li><a class="menu-link" href="#expeditions">Wyprawy</a></li>
+                    <li><a class="menu-link" href="#inspirations">Inspiracje</a></li>
+                    <li><a class="menu-link" href="#gallery">Galeria</a></li>
+                    <li><a class="menu-link" href="#contacts">Kontakt</a></li>
                   </ul>
                 </div>
             </header>
@@ -48,17 +48,17 @@
                 
                     <h1>ORIENT EXPRESS TRAVEL</h1>
                     <h2>Nasze podróże małe i duże</h2>
-                    <p>Strona ta powstała z namiętności do podróży. Zaczęło się niewinnie od zagranicznych wakacji i trwa do tej pory. W ciągu kilku lat zobaczyliśmy wiele miejsc w wielu krajach. Przemierzaliśmy świat samolotem, pociągiem, samochodem, statkiem, a nawet balonem. Odwiedziliśmy kilka kontynentów: Amerykę Północną, Afrykę, Azję i oczywiście Europę. Byliśmy w USA, w Egipcie, w Turcji, na Dominikanie, w Grecji, w Hiszpanii, na Cyprze, w Niemczech oraz w Danii. Zafascynowaliśmy się kulturą orientu i historią starożytnego Egiptu. Poniżej przedstawiamy kilka relacji z naszych małych i dużych wypadów. Mamy nadzieję, że sporo nieodkrytych miejsc jeszcze na nas czeka, a my znajdziemy czas żeby je zobaczyć i podzielić się z wami wrażeniami.</p>
+                    <p>Strona ta powstała z namiętności do podróży. Zaczęło się niewinnie od zagranicznych wakacji i trwa do tej pory. W ciągu kilku lat zobaczyliśmy wiele miejsc w wielu krajach. Przemierzaliśmy świat samolotem, pociągiem, samochodem, statkiem, a nawet balonem. Odwiedziliśmy kilka kontynentów: Amerykę Północną, Afrykę, Azję i oczywiście Europę. Byliśmy w USA, w Egipcie, w Turcji, na Dominikanie, w Grecji, w Hiszpanii, na Cyprze, w Niemczech, w Danii, w Bułgarii oraz w Słowenii i na Słowacji. Zafascynowaliśmy się egzotyczną kulturą i kuchnią orientu oraz historią starożytnego Egiptu. Poniżej przedstawiamy kilka relacji z naszych małych i dużych wypadów. Sporo nieodkrytych miejsc jeszcze na nas czeka, więc mamy nadzieję że znajdziemy czas żeby je zobaczyć i podzielić się z wami wrażeniami oraz pięknymi zdjęciami.</p>
                     <a href="#gallery">GALERIA</a>
                 
             </section>
 
-    <!-- Wyprawy -->
+    <!-- Expeditions -->
 
             <section class="expeditions" id="expeditions">
                 <h1>Ostatnie wyprawy</h1>
                 <div class="container">
-                    <div>
+                    <div class="features-wrapper">
                         <div>
                             <img src="img/20240709_141112.jpg" alt="Luxor">
                             <h2>LUXOR</h2>
@@ -89,7 +89,7 @@
                 </div>
             </section>
 
-    <!-- Inspiracje -->
+    <!-- Inspirations -->
 
             <section class="inspirations" id="inspirations">
                 <h1>Nowe inspiracje</h1>
@@ -98,17 +98,68 @@
                 </div>
             </section>
 
-    <!-- Galeria -->
+    <!-- Gallery -->
 
             <section class="gallery" id="gallery">
                 <h1>Fotki z podróży</h1>
+                <div class="container">
+                    <div id="slider">
+                        <div id="top-row">
+                          <img class="arrow arrow-left" id="arrow-left" src="img/arrow-left.png" alt="arrow-left"/>
+                          <div id="slides-container">
+                            <img class="slide active" id="slide1" src="img/photos/photo-01.jpg" alt="photo-01"/>
+                            <img class="slide" id="slide2"src="img/photos/photo-02.jpg" alt="phpto-02"/>
+                            <img class="slide" id="slide3"src="img/photos/photo-03.jpg" alt="photo-03"/>
+                            <img class="slide" id="slide4"src="img/photos/photo-04.jpg" alt="photo-04"/>
+                            <img class="slide" id="slide5"src="img/photos/photo-05.jpg" alt="photo-05"/>
+                            <img class="slide" id="slide6"src="img/photos/photo-06.jpg" alt="photo-06"/>
+                            <img class="slide" id="slide7"src="img/photos/photo-07.jpg" alt="photo-07"/>
+                          </div>
+                
+                          <img class="arrow arrow-right" id="arrow-right" src="img/arrow-right.png" alt="arrow-right"/>
+                        </div>
+                        <div id="bottom-row">
+                          <div id="dots">
+                            <div class="dot" id="dot1"></div>
+                            <div class="dot" id="dot2"></div>
+                            <div class="dot" id="dot3"></div>
+                            <div class="dot" id="dot4"></div>
+                            <div class="dot" id="dot5"></div>
+                            <div class="dot" id="dot6"></div>
+                            <div class="dot" id="dot7"></div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </section>
 
-    <!-- Kontakt -->
+    <!-- Contacts -->
 
-            <section class="contact" id="contact">
+            <section class="contacts" id="contacts">
                 <h1>Kontakt</h1>
+                <div class="container">
+                    <div class="contacts-wrapper">
+                        <article class="contact">
+                          <i class="fa-solid fa-envelope fa-3x"></i>
+                          <h3 class="contact-title">E-mail</E-mail></h3>
+                          <p>christoffg74@gmail.com</p>
+                        </article>
+                        <article class="contact">
+                          <i class="fa-solid fa-mobile-screen-button fa-3x"></i>
+                          <h3 class="contact-title">Telefon</h3>
+                          <p>+48519147492</p>
+                        </article>
+                        <article class="contact">
+                          <i class="fa-solid fa-building fa-3x"></i>
+                          <h3 class="contact-title">Adres</h3>
+                          <p>ul. Konopnickiej 34</p>
+                          <p>42-450 Łazy, Poland</p>
+                        </article>
+                      </div>
+                </div>
             </section>
+
+    <!-- Footer -->
 
         <script src="scripts.js" async defer></script>
     </body>
