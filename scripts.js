@@ -26,6 +26,12 @@ let showSlide = (slideNumber) => {
     document.querySelector('#slide'+slideNumber).classList.add('active');
 }
 
+let changeActiveDot = (dotNumber) => {
+    let visibleElement = document.querySelector('.visible');
+    visibleElement.classList.remove('visible');
+    document.querySelector('#dot'+dotNumber).classList.add('visible');
+}
+
 let showNextSlide = () => {
     if (activeSlideNumber === 7) {
         activeSlideNumber = 1;
@@ -33,6 +39,7 @@ let showNextSlide = () => {
         activeSlideNumber = activeSlideNumber + 1;
     }
     showSlide(activeSlideNumber);
+    changeActiveDot(activeSlideNumber);
 }
 
 let showPreviousSlide = () => {
@@ -42,14 +49,16 @@ let showPreviousSlide = () => {
         activeSlideNumber = activeSlideNumber - 1;
     }
     showSlide(activeSlideNumber);
+    changeActiveDot(activeSlideNumber);
 }
 
 for(let i = 1; i <= 7; i++) {
     let showSlideI = () => {
         activeSlideNumber = i;
         showSlide(i);
+        changeActiveDot(i);
     }
-    document.querySelector('#dot'+i).addEventListener('click', showSlideI);
+    document.querySelector('#dot'+i).addEventListener('click', showSlideI, changeActiveDot);
 }
 
 arrowRight.addEventListener('click', showNextSlide);
