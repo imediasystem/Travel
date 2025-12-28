@@ -1,50 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain) */
+* { box-sizing: border-box;
+}
 
-   html, body, div, span, applet, object, iframe,
-   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-   a, abbr, acronym, address, big, cite, code,
-   del, dfn, em, img, ins, kbd, q, s, samp,
-   small, strike, strong, sub, sup, tt, var,
-   b, u, i, center,
-   dl, dt, dd, ol, ul, li,
-   fieldset, form, label, legend,
-   table, caption, tbody, tfoot, thead, tr, th, td,
-   article, aside, canvas, details, embed, 
-   figure, figcaption, footer, header, hgroup, 
-   menu, nav, output, ruby, section, summary,
-   time, mark, audio, video {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-   }
-   /* HTML5 display-role reset for older browsers */
-   article, aside, details, figcaption, figure, 
-   footer, header, hgroup, menu, nav, section {
-       display: block;
-   }
-   body {
-       line-height: 1;
-   }
-   ol, ul {
-       list-style: none;
-   }
-   blockquote, q {
-       quotes: none;
-   }
-   blockquote:before, blockquote:after,
-   q:before, q:after {
-       content: '';
-       content: none;
-   }
-   table {
-       border-collapse: collapse;
-       border-spacing: 0;
-   }
+*:focus {
+    box-shadow: none;
+}
 
 body {
     background-color: #FFF;
@@ -54,17 +13,15 @@ body {
     transition: all 0.5s;
 }
 
-* { box-sizing: border-box;
-}
-
-*:focus {
-    box-shadow: none;
-  }
-
 .container	{
-	max-width: 1080px;
+	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* ---- Navigation Menu ---- */
@@ -162,7 +119,7 @@ body {
     background: rgba(0,0,0,0.7);
     border-radius: 10px;
     padding: clamp(1rem, 3vw, 3rem);
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -191,7 +148,6 @@ body {
     background: url("img/iran-3854255_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 0;
     height: 100vh;
 }
 
@@ -200,7 +156,7 @@ body {
     font-weight: bold;
     color: #242424;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 5%;
     padding: clamp(0.5rem, 2vw, 3rem);
     padding-top: 5rem;
     text-shadow: 0.1em 0.1em 0.1em grey;
@@ -210,34 +166,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     padding: 0;
 }
 
-.expeditions .container > div {
+.expeditions .container .card {
     width: 25%;
-    height: 50vh;
+    height: auto;
     border: 2px solid black;
     border-radius: 10px;
     margin: 0 1vw;
     box-shadow: 10px 10px 8px grey;
+    background-color: rgba(255,255,255,0.4);
     overflow: hidden;
 }
 
-.expeditions .container > div p {
+.expeditions .container .card p {
     padding: 1rem;
     margin: 0;
     text-align: center;
     font-weight: bold;
 }
 
-.expeditions .container > div > div {
+.expeditions .container .card .picture {
     position: relative;
     max-height: 350vh;
     overflow: hidden;
 }
 
-.expeditions .container > div > div > h2 {
+.expeditions .container .card .picture > h3 {
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,0.6);
@@ -246,12 +202,12 @@ body {
     padding: 1rem 0;
     width: 100%;
     color: #f3f3f3;
+    font-weight: bold;
 }
 
-.expeditions .container > div > div > img {
+.expeditions .container .card .picture > img {
     width: 100%;
-    height: auto;
-    padding: 0;
+    padding: 0%;
 }
 
 /* ---- Inspirations ---- */
@@ -424,7 +380,7 @@ body {
 /* ---- Footer ---- */
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .expeditions .container {
         flex-direction: column;
         flex: 50%;
