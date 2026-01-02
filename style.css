@@ -329,7 +329,6 @@ img {
     grid-gap: 2rem 1rem;
     align-items: start;
     justify-items: center;
-    margin-top: 20px;
 }
 .grid img {
     border: 2px solid black;
