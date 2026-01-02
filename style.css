@@ -323,6 +323,24 @@ img {
     text-shadow: 0.1em 0.1em 0.1em grey;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 2rem 1rem;
+    align-items: start;
+    justify-items: center;
+    margin-top: 20px;
+}
+.grid img {
+    border: 2px solid black;
+    box-shadow: 10px 10px 8px grey;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.grid img:nth-child(6){
+    grid-column: span 5;
+}
+
 
 /* ---- Contact ---- */
 
