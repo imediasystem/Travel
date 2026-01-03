@@ -174,7 +174,7 @@ img {
     height: auto;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 0 1vw;
+    margin: 2%;
     box-shadow: 10px 10px 8px grey;
     background-color: rgba(255,255,255,0.4);
     overflow: hidden;
@@ -307,6 +307,7 @@ img {
     background-size: cover;
     background-position: unset;
     height: 100vh;
+    width: 100wv;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,15 +406,19 @@ img {
 
 
 @media only screen and (max-width: 768px) {
+    .expeditions {
+        height: auto;
+    }
+    
     .expeditions .container {
-        flex-direction: column;
-        flex: 50%;
+        flex-wrap: wrap;
     }
 
-    .expeditions .container > div {
+    .expeditions .container .card {
         width: 40%;
+        margin: 3%;
     }
-
+   
     .menu {
         padding: 10px;
     }
@@ -448,14 +453,31 @@ img {
         max-height: 100vh;
     }
     
+    .inspirations {
+        height: auto;
+    }
+
+    #bottom-row  {
+        margin: 3%;
+    }
+
+    .gallery {
+        height: auto;
+    }
+
+    .grid {
+        margin: 3%;
+    }
+
     .contacts-wrapper {
         display: block;
     }
 
     .contact {
-        margin: 10% 20% 10% 20%;
-        max-width: 100%;
+        margin: 3% 10%;
+        max-width: 80%;
+        height: auto;
         justify-content: center;
-        
+        align-items: center;
     }
 }
