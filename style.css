@@ -326,7 +326,7 @@ img {
 .grid {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-gap: 2rem 1rem;
+    grid-gap: 1rem;
     align-items: start;
     justify-items: center;
 }
