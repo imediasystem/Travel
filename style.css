@@ -326,7 +326,7 @@ img {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 1rem;
     align-items: start;
     justify-items: center;
@@ -337,8 +337,8 @@ img {
     max-width: 100%;
     border-radius: 10px;
 }
-.grid img:nth-child(6){
-    grid-column: span 5;
+.grid img:nth-child(5){
+    grid-column: span 4;
 }
 
 
@@ -467,6 +467,11 @@ img {
 
     .grid {
         margin: 3%;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid img:nth-child(5){
+    grid-column: span 2;
     }
 
     .contacts-wrapper {
@@ -474,8 +479,8 @@ img {
     }
 
     .contact {
-        margin: 2% 10%;
-        max-width: 80%;
+        margin: 2% 20%;
+        max-width: 60%;
         height: auto;
         justify-content: center;
         align-items: center;
