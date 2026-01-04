@@ -289,6 +289,10 @@ img {
 #dots .dot.visible {
     background-color: #ffffff;
 }
+
+#bottom-row  {
+        margin: 3%;
+    }
   
 .arrow {
     margin: 0 10px;
@@ -306,8 +310,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: unset;
-    height: 100vh;
-    width: 100wv;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,6 +333,7 @@ img {
     grid-gap: 1rem;
     align-items: start;
     justify-items: center;
+    margin: 3%;
 }
 .grid img {
     border: 2px solid black;
@@ -454,14 +458,6 @@ img {
     }
     
     .inspirations {
-        height: auto;
-    }
-
-    #bottom-row  {
-        margin: 3%;
-    }
-
-    .gallery {
         height: auto;
     }
 
