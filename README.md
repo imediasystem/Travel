@@ -1,6 +1,8 @@
 [![www-5](https://github.com/user-attachments/assets/7cc7a90b-8325-4bd4-916e-a11801811aa9)](https://imediasystem.github.io/Travel/)
 ## 🔥 Project Name - TRAVEL
 
+[![View Demo](https://img.shields.io/badge/LIVE_DEMO-Visit_Website-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://imediasystem.github.io/redCODE-STudio/)
+
 See the live version of [TRAVEL](https://imediasystem.github.io/Travel/) ↗️
 
 Creating a modern travel website that aims to provide users with inspiration, tools and information that will help them plan their dream trips. The project consists of several key sections that provide an attractive appearance and facilitate navigation. I used HTML5 and CSS3 to plan the structure and styling of the page, I used Flexbox and Grid for responsiveness. JavaScript and React for dynamic, interactive elements of the page, such as filters or forms.
